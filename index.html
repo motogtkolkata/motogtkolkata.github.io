@@ -412,7 +412,7 @@
     <h4>Write, call and ask for a price!</h4>
 
     <div class="container">
-      <form onsubmit="return addContactResponse();">
+      <form onsubmit="addContactResponse(); return false;">
         <div class="input-box">
           <input type="text" placeholder="Your Name" id="Name" class="box" required />
           <input type="email" placeholder="Your Email" id="Email" class="box" required />
