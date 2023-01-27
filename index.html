@@ -500,13 +500,12 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="main.js"></script>
   <script>
-    function addContactResponse(event) {
-      event.preventDefault();
-      var name = $("#Name").val;
-      var email = $("#Email").val;
-      var number = $("#Number").val;
-      var subject = $("#Subject").val;
-      var message = $("#Message").val;
+    function addContactResponse() {
+      var name = document.getElementById("Name").value;
+      var email = document.getElementById("Email").value;
+      var number = document.getElementById("Number").value;
+      var subject = document.getElementById("Subject").value;
+      var message = document.getElementById("Message").value;
 
       const url = "https://api.sheety.co/e0e2dce8c84f467ddd8c33984a3b1aa5/contact (responses)/formResponses1";
       const currentTime = new Date();
